@@ -101,7 +101,7 @@ export default function Hero() {
               creative flair, and timeless recipes — designed to delight your
               senses.
             </p>
-            <a href="#cocktails">View cocktails</a>
+            <a href="">View cocktails</a>
           </div>
         </div>
       </div>
