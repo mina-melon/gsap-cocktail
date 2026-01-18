@@ -1,4 +1,4 @@
-import { cocktailLists, mockTailLists } from "../../constants/index.js";
+import { cocktailLists, mockTailLists, type Cocktail } from "../../constants/index.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -37,7 +37,7 @@ export default function Cocktails() {
           <h2>Most popular cocktails:</h2>
 
           <ul>
-            {cocktailLists.map(({ name, country, detail, price }) => (
+            {cocktailLists.map(({ name, country, detail, price }: Cocktail) => (
               <li key={name}>
                 <div className="md:me-28">
                   <h3>{name}</h3>
@@ -55,7 +55,7 @@ export default function Cocktails() {
           <h2>Most loved mocktails:</h2>
 
           <ul>
-            {mockTailLists.map(({ name, country, detail, price }) => (
+            {mockTailLists.map(({ name, country, detail, price }: Cocktail) => (
               <li key={name}>
                 <div className="me-28">
                   <h3>{name}</h3>
