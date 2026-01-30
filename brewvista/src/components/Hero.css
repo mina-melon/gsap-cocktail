@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@import '../index.css';
+
+@layer components {
+    .hero {
+        @apply font-bold text-3xl px-[56px] py-[16px];
+
+        .logo {
+            @apply text-[34px] text-accent;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+#root {
+  width: 100%;
+}
+
+:root {
+  --font-sans: "Mona Sans", sans-serif;
+}
+
+
+@theme inline {
+  --font-sans: var(--font-sans);
+}
+
+@layer components {
+  .hero {
+    @apply bg-[url(hero.jpg)] bg-center bg-repeat-x h-screen w-full flex flex-col justify-between items-center pt-50 pb-30;
+    p {
+      @apply text-center text-3xl text-white font-bold;
+    }
+  }
+
+  .scroll-container {
+    @apply flex justify-center items-center flex-col gap-2 opacity-[0.5];
+  }
+
+  .boxWrapper{
+    @apply h-[100%];
+  }
+
+  .box {
+    @apply bg-repeat-x w-full h-[80%];
+  }
+
+  .box1 {
+    @apply bg-[url(pt1.jpg)];
+  }
+
+  .box2 {
+    @apply bg-[url(pt2.jpg)];
+  }
+
+  .box3 {
+    @apply bg-[url(pt3.jpg)];
+  }
+
+  .box4 {
+    @apply bg-[url(pt4.jpg)];
+  }
+
+  .wrapper {
+    @apply overflow-hidden h-[100vh];
+  }
+
+  .track{
+    @apply flex flex-row w-max;
+  }
+
+  .panel{
+    @apply w-[100vw] h-[100vh];
+  }
+}

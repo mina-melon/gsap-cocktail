@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@layer components {
+    .body {
+        @apply bg-black h-[678px];
+    }
+
+    .panel {
+        @apply bg-yellow-200 h-dvh w-full;
+    }
+
+    .bg-edit {
+        @apply bg-yellow-700 rounded-full h-12.5 w-12.5;
+    }
+
+    .bg-add {
+        @apply bg-red-900;
+    }
+
+    .nav-page {
+        @apply bg-yellow-200 w-full px-6 py-4;
+    }
+
+    .nav-container {
+        @apply bg-yellow-200 sticky top-0 z-50 ;
+    }
+
+    .nav {
+        @apply flex flex-row justify-end gap-2 py-8 ;
+    }
+
+    .nav-add {
+        @apply bg-white;
+
+        li {
+            @apply text-red-800;
+        }
+    }
+}
